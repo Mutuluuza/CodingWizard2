@@ -1,0 +1,58 @@
+body{
+    font-size: 20px;
+}
+header{
+    font-size: 50px;
+    text-align: center;
+    border: 5px solid black;
+    width: 100%;
+    border-radius: 5px;
+}
+nav{
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    width: 100%;
+}
+button{
+    background-color: skyblue;
+    border-radius: 5px;
+    border-color: antiquewhite;
+}
+.img1{
+    float: left;
+    margin-right: 10px;
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    padding: 10px;
+}
+.cleared{
+    clear: left;
+}
+section{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+}
+.photos {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 150px 150px;
+    grid-row-gap: 1px;
+    grid-column-gap: 1px;
+}
+/* 
+the thing wasnt working because the images were not sized properly the default 
+size was 400px but i sized it down to 100px. then also i was supposed to add rows and colums not only colums
+and also
+always make sure to also debug with the developers tools as well coz i wasnt seeing the problem till
+we checked the developers tools ( developers tools is debugging on the console)
+and also the fact that i had put the photos in a list was also making it a problem to code correctly
+*/
+.img2{
+    width: 200px;
+    height: 150px
+}
+

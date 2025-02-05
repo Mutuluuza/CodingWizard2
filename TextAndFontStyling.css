@@ -1,0 +1,135 @@
+/*basic text and font styling*/
+html{
+    font-size: 10px;
+}
+h1{
+    font-size: 5rem;
+    text-transform: capitalize;
+    text-shadow: 10px 10px 10px teal,
+                 20px 20px 20px tomato;
+    text-align: center;
+    letter-spacing: 2px;             
+}
+h1 + .first{
+    font-weight: bold;
+}
+p::first-line{
+    letter-spacing: 4px;
+    word-spacing: 4px;
+}
+p{
+    font-size: 1.5rem;
+    color: teal;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    letter-spacing: 1px;
+}
+/*basic list styling*/
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+h2{
+    font-size:2rem;
+}
+ul,ol,dl,p{
+    font-size:1.5rem;
+}
+li,p{
+    line-height: 1.5;
+}
+ul{
+    padding-left: 2rem;
+    list-style-type: none;
+}
+ul li{
+    padding-left: 2rem;
+    background-image: url(staricon.png);
+    background-position: 1 1;
+    background-size: 2rem 2rem;
+    background-repeat: no-repeat;
+}
+ol{
+    list-style-type:upper-roman;
+}
+dd, dt{
+    line-height: 1.5;
+}
+dt{
+    font-weight: bold;
+}
+/*basic link styling*/
+.Links{
+    width: 300px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    font-family:'Times New Roman', Times, serif
+}
+article{
+    line-height: 1.4;
+}
+.link-style{
+    outline-color: transparent;
+}
+.link-style:link{
+    color:blueviolet;
+}
+.link-style:visited{
+    color:aqua;
+}
+.link-style:focus{
+    text-decoration: wavy;
+    background: #bae498;
+}
+.link-style:hover{
+    text-decoration: wavy;
+    background: #cdfeaa;
+}
+.link-style:active{
+    background: #6900ff;
+    color: #cdfeaa;
+}
+.Links2{
+    width: 300px;
+    margin: 0 auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.link-style1[href^="http"]::after{
+    content:"";
+    display: inline-block;
+    width: 0.8em;
+    height: 0.8em;
+    margin-left: 0.25em;
+    background-size: 100%;
+    background-image: url("icons8-external-link-26.png");
+}
+.linklist{
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container1{
+    display: flex;
+    gap: 0.625%;
+}
+.Link-style2{
+    flex: 1;
+    text-decoration: none;
+    outline-color: aqua;
+    text-align: center;
+    line-height: 3;
+    color: black;
+}
+.Link-style2:link,
+.Link-style2:visited,
+.Linkstyle2:focus{
+    background: purple;
+    color: whitesmoke;
+}
+.Link-style2:hover{
+    background-color: aquamarine;
+}
+.Link-style2:active{
+    background: darkcyan;
+    color: white;
+}
+

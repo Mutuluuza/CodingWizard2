@@ -1,0 +1,99 @@
+body {
+    width: 90%;
+    max-width: 900px;
+    margin: 2em auto;
+    font: .9em/1.2 Arial, Helvetica, sans-serif;
+}
+.grid1 > div {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(207,232,220);
+    border: 2px solid rgb(79,185,227);
+}
+.grid1{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    gap: 20px;
+}
+.grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px;
+    gap: 10px;
+}
+.item1 {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(207,232,220);
+    border: 10px solid rgb(79,185,227);
+    grid-column: 1/4;
+    grid-row: 1/3;
+    order: 1;
+}
+.item2 { 
+    border-radius: 5px;
+    padding: 10px;
+    background-color: palevioletred;
+    border: 10px solid rgb(207,232,220);
+    grid-column: 2/5;
+    grid-row: 2/4;
+    z-index: 1;
+}
+.grid3 > div {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(207,232,220);
+    border: 2px solid rgb(79,185,227);
+}
+.grid3 {
+    display: grid;
+    grid-template-columns:repeat(12, minmax(0, 1fr));
+    gap: 20px;
+}
+.one{
+    grid-column: 1/13;
+    grid-row: 1;
+}
+.two{
+    grid-column: 1/4;
+    grid-row: 2;
+}
+.three{
+    grid-column: 4/13;
+    grid-row: 2;
+}
+.four{
+    grid-column: 4/13;
+    grid-row: 3;
+}
+li{
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(207,232,220);
+    border: 2px solid rgb(79,185,227);
+}
+img{
+    width: 300px;
+    height: 200px;
+}
+.tags{
+     display:flex;
+     gap:10px;
+     flex-direction: row;
+     flex-wrap: wrap;
+     list-style-type: none;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+/*The container will need to be a grid layout, 
+as we have alignment in rows and columns - two-dimensional. 
+The <ul> needs to be a flex container as tags (<li> elements) are not lined up in columns, 
+only in rows and they are centered in the space with the alignment property justify-content set to center.
+You may try to use flexbox on the container and restrict the cards with percentage values. 
+You may also try to make the items into a grid layout in which case, 
+note that the items are not aligned in two dimensions so flexbox isn't the best choice.
+*/
+  
